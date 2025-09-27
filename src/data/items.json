@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Glassesfirst1",
+    "price": 200,
+    "imgUrl": "/img/download.webp"
+  },
+  {
+    "id": 2,
+    "name": "Glassessecond2",
+    "price": 300,
+    "imgUrl": "/img/download (2).webp"
+  },
+  {
+    "id": 3,
+    "name": "Glassesthird3",
+    "price": 400,
+    "imgUrl": "/img/download (3).webp"
+  },
+  {
+    "id": 4,
+    "name": "Glassesforth4",
+    "price": 500,
+    "imgUrl": "/img/download (1).webp"
+  }
+]
