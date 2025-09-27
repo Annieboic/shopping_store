@@ -5,6 +5,8 @@ import {Home} from "./pages/Home.tsx";
 import {Store} from "./pages/Store.tsx";
 import {Blog} from "./pages/Blog.tsx";
 import {Contacts} from "./pages/Contacts.tsx";
+import {ClickedItem} from "./components/ClickedItem";
+
 
 function App() {
 
@@ -20,6 +22,7 @@ function App() {
                 <Route path="/store" element={<Store />}/>
                 <Route path="/blog" element={<Blog />}/>
                 <Route path="/contacts" element={<Contacts />}/>
+                <Route path="product/:id" element={<ClickedItem />}/>
             </Routes>
         </Container>
 
