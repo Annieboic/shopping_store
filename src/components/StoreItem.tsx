@@ -1,5 +1,7 @@
 import {Button, Card} from "react-bootstrap";
 import {useShoppingCart} from "../context/ShoppingCartContext.tsx";
+import {Link} from "react-router-dom";
+
 
 type Props = {
     id: number
@@ -17,8 +19,12 @@ export function StoreItem({id, name, price, imgUrl} : Props) {
 
     return (
         <Card style={{ width: '18rem' }} key={id} className="mb-4 mt-4">
-
+        <Link to={`/product/${id}`}>
             <Card.Img variant="top" src={imgUrl} />
+        </Link>
+
+
+
 
             <Card.Body className="  d-flex flex-column">
                 <Card.Title className="d-flex justify-content-around align-items-center">
