@@ -25,6 +25,13 @@ export function Cart({showCart} : CartProps) {
                         />
                     ))}
 
+                    <div>
+
+                        Total: {cartItems.reduce((total, cartItem) => {
+                         return total + cartItem.price * cartItem.quantity
+                    }, 0)}
+                    </div>
+
 
                 </Offcanvas.Body>
             </Offcanvas>

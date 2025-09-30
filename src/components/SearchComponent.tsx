@@ -11,7 +11,7 @@ export function SearchComponent({showInputSearch, isSearchClosed} : SearchCompon
         <>
 
 
-            <Offcanvas show={showInputSearch} onHide={isSearchClosed} placement="end">
+            <Offcanvas show={showInputSearch} onHide={isSearchClosed} placement="end" style={{width: '50%'}}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>Search Input</Offcanvas.Title>
                 </Offcanvas.Header>

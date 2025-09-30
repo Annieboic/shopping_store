@@ -2,6 +2,7 @@ import {createContext, ReactNode, useContext, useState} from "react";
 import StoreItems from '../data/items.json';
 import {Cart} from "../components/Cart.tsx";
 import {SearchComponent} from "../components/SearchComponent.tsx";
+import useLocalStorage from "../components/hooks/useLocalStorageHook.ts";
 
 
 type ShoppingCartContextType = {
@@ -63,7 +64,10 @@ export function ShoppingCartProvider ({children}: ShoppingCartProviderProps){
 
     const [filteredItems, setFilteredItems] = useState<StoreItem[]>(StoreItems);
 
-    const [cartItems, setCartItems] = useState<CartItem[]>([]);
+    const [cartItems, setCartItems] = useLocalStorage<CartItem[]>(
+       "cartItems",
+        []
+    );
 
 
     //quantity of items in cart total
