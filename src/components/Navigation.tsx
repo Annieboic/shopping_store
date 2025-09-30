@@ -52,14 +52,16 @@ export function Navigation(){
                         <Form.Control
                             type="text"
                             placeholder="Search for an item"
-                            value={searchText}
-                            onChange={handleSearch}
+                            // value={searchText}
+                            // onChange={handleSearch}
                             className="me-2"
+                            onClick={isSearchOpen}
+                            readOnly={true}
 
                         />
-                        <Button variant="outline-secondary" onClick={isSearchOpen} className="me-4">
-                            Search
-                        </Button>
+                        {/*<Button variant="outline-secondary" onClick={isSearchOpen} className="me-4">*/}
+                        {/*    Search*/}
+                        {/*</Button>*/}
                     </Form>
 </div>
 

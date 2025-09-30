@@ -29,7 +29,10 @@ return (
 
               <div>{item.price * quantity}</div>
 
+
           </Stack>
+
+
 
 
       </>
